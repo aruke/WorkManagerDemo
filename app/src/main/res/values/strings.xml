@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WorkManager for Everyone</string>
+    <string name="title_activity_basic">Basic Worker</string>
+</resources>

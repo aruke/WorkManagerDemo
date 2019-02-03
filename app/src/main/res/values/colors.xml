@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2440A4</color>
+    <color name="colorPrimaryDark">#172D7B</color>
+    <color name="colorAccent">#e962be</color>
+
+
+    <!-- TODO Remove these colors -->
+    <!--==================== Quipper colors ====================-->
+    <color name="theme">#2440A4</color>
+    <color name="theme_darker">#172D7B</color>
+    <color name="warning">#e962be</color>
+    <color name="warning_lighter">#fadef1</color>
+    <color name="danger_lighter">#FEDFE4</color>
+    <color name="success_lighter">#D3F4E1</color>
+    <color name="success_dark">#06AE58</color>
+    <color name="mastered_lighter">#f7f5d1</color>
+    <color name="background_dark">@color/primary_dark</color>
+    <color name="background_alpha85">#d918b3dc</color>
+    <color name="primary_lighter">#CFE9FF</color>
+    <color name="primary_dark">#276CD9</color>
+    <color name="selected">@color/primary_lighter</color>
+    <color name="unread">@color/danger_lighter</color>
+    <color name="navigation_bar_unselected">#4d6b8fbc</color>
+    <color name="navigation_bar_selected">#00beff</color>
+
+    <!--==================== Global ====================-->
+    <color name="global_video_brand">#eb5a91</color>
+    <color name="global_video_payment_plan">#bd1381</color>
+
+    <!--==================== Quipper New UI colors ====================-->
+    <color name="darkblue">#0056b3</color>
+    <color name="grey">#8fb0d4</color>
+    <color name="gunmetal">#4c5263</color>
+    <color name="greyplus2">#1e3f6b</color>
+    <color name="success">#00cbae</color>
+    <color name="primary">#00beff</color>
+    <color name="primarymin3">#d6f5ff</color>
+    <color name="greymin1">#bed2e8</color>
+    <color name="greymin2">#e3ecf5</color>
+    <color name="greymin3">#f6f7fa</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="successmin3">#bcefe2</color>
+    <color name="dangermin3">#fef2f7</color>
+    <color name="greyplus1">#6b8fbc</color>
+    <color name="danger">#f9587a</color>
+    <color name="mastered">#ded807</color>
+</resources>
