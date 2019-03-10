@@ -15,15 +15,12 @@ class NetworkActivity : AppCompatActivity() {
         val secretKey: String = AppPreferences.getSecretKey()
         val userData: Array<String> = UserPreferences.getUserData()
 
-
-        // Use startUniqueWork
-
         val workManager = WorkManager.getInstance()
 
         workManager.beginUniqueWork(
-            NetworkWorker.NAME,
-            ExistingWorkPolicy.KEEP,
-            NetworkWorker.buildRequest(secretKey, userData)
+                NetworkWorker.NAME,
+                ExistingWorkPolicy.KEEP,
+                NetworkWorker.buildRequest(secretKey, userData)
         ).enqueue()
 
     }

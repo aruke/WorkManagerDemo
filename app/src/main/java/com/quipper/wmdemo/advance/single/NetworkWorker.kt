@@ -11,8 +11,8 @@ class NetworkWorker(private val context: Context, private val params: WorkerPara
     override fun doWork(): Result {
 
         // Get the input data
-        val userData = params.inputData.getStringArray("key_user_data")
-        val secretKey = params.inputData.getString("key_secret_key")
+        val userData = params.inputData.getStringArray(KEY_USER_DATA)
+        val secretKey = params.inputData.getString(KEY_SECRET_KEY)
 
         secretKey ?: run {
             Log.e(TAG, "doWork: SecretKey not found in WorkParams")
@@ -44,20 +44,20 @@ class NetworkWorker(private val context: Context, private val params: WorkerPara
         fun buildRequest(secretKey: String, userData: Array<String>): OneTimeWorkRequest {
 
             val inputData = Data.Builder()
-                .putString(KEY_SECRET_KEY, secretKey)
-                .putStringArray(KEY_USER_DATA, userData)
-                .build()
+                    .putString(KEY_SECRET_KEY, secretKey)
+                    .putStringArray(KEY_USER_DATA, userData)
+                    .build()
 
             val constraints = Constraints.Builder()
-                .setRequiredNetworkType(NetworkType.CONNECTED)
-                .setRequiresCharging(true)
-                .build()
+                    .setRequiredNetworkType(NetworkType.CONNECTED)
+                    .setRequiresCharging(true)
+                    .build()
 
             return OneTimeWorkRequest.Builder(NetworkWorker::class.java)
-                .setInputData(inputData)
-                .setConstraints(constraints)
-                .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 15, TimeUnit.MINUTES)
-                .build()
+                    .setInputData(inputData)
+                    .setConstraints(constraints)
+                    .setBackoffCriteria(BackoffPolicy.EXPONENTIAL, 15, TimeUnit.MINUTES)
+                    .build()
         }
     }
 }

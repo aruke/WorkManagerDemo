@@ -1,9 +1,12 @@
 package com.quipper.wmdemo.advance.periodic
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.quipper.wmdemo.R
 
+/**
+ * TODO
+ */
 class LocationUpdateActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

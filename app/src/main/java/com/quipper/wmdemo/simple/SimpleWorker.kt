@@ -1,4 +1,4 @@
-package com.quipper.wmdemo.basic
+package com.quipper.wmdemo.simple
 
 import android.content.Context
 import androidx.work.Worker
